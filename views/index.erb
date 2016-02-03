@@ -1,0 +1,19 @@
+<h1>Team Randomizer</h1>
+
+<form action="/" method="POST">
+  <textarea name="random" style="width: 400px; height: 100px;"><%= session[:name_normal] %></textarea>
+  <br />
+  <br />
+  <label>Method</label>
+  <input type="radio" name="pick" value="team"<%= session[:radio1] %>>Team Count
+  <input type="radio" name="pick" value="number"<%= session[:radio] %>>Number Per Team
+  <br />
+  <input type="text" name="num" value="<%= session[:num] %>">
+  <br />
+  <br />
+  <input type="submit" value="Submit">
+</form>
+
+
+
+<%= session[:team] %>
